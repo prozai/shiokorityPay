@@ -4,9 +4,9 @@ import { Link } from 'expo-router';
 export default function App() {
   return (
     <View>
-      <Text>hello how are you doing</Text>
-      <Text>I want to do login page</Text>
-      <Link href="/login" style={{color:'blue'}}>Go to Login</Link>
+      <Text>Make Payment</Text>
+      <Link href="./view/login" style={{color:'blue'}}>Go to Login</Link>
+      <Link href="./view/payment" style={{color:'blue'}}>Payment</Link>
     </View>
   );
 }
