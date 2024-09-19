@@ -1,18 +1,16 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet ,Image, SafeAreaView} from "react-native";
 import { Link } from 'expo-router';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>
-        <Link href="./view/login" style={{color:'blue'}}>Login</Link>
-      </Text>
-      <Text style={styles.text}>
-        <Link href="./view/payment" style={{color:'blue'}}></Link>
-      </Text>
-      <Text style={styles.text}>
-        <Link href="./view/payment" style={{color:'blue'}}>Payment</Link>
-      </Text>
+      <SafeAreaView>
+        <Text>Flexible</Text>
+        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae dictum turpis. Fusce hendrerit quam vel.</Text>
+      </SafeAreaView>
+      {/* <Image source={shiokorityPayIcon} style={{ width: 200, height: 200 }} /> */}
+      <Text style={styles.text}>Login</Text>
+      <Text style={styles.text}>Payment</Text>
     </View>
   );
 }
