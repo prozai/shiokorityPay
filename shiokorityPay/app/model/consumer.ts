@@ -120,7 +120,9 @@ class Consumer {
         );
       });
     });
-    static async processPayment(data: { merchantId: number; amount: number }) {
+  }
+  
+  static async processPayment(data: { merchantId: number; amount: number }) {
 
     try {
       const response = await axios.post(`${config.API_URL}/consumer/process-payment`, data);

@@ -27,5 +27,5 @@ class ConsumerController {
   static validatePayment(merchantId: number, amount: number) {
     return Consumer.validatePayment(merchantId, amount);
   }
-
+}
 export default ConsumerController;
